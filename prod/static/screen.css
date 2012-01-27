@@ -1,0 +1,6 @@
+html, body { margin: 0; padding: 0; background: #fff; }
+body { width: 40em; padding: 10px 2.5em; background: white;
+  font-family: 'Lato', sans-serif; margin: 0 auto }
+body.hive h1 { font-size: 4em; text-align: center; text-shadow: 2px 2px 2px #666; }
+#new-strip { text-align: center; }
+#new-strip button { font-size: 3em; font-family: inherit; }

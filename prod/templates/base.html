@@ -1,0 +1,18 @@
+$def with (page)
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>Sendetary | $page.title</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href="${get_root()}/static/screen.css" type="text/css" rel="stylesheet" />
+  $:page.get('head')
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="${get_root()}/static/code.js"></script>
+</head>
+<body class="$page.type">
+  $:page
+</body>
+</html>

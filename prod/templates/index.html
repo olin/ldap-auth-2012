@@ -1,0 +1,19 @@
+$def with (username, query, failed)
+$var title: Main
+$var type: main
+
+<h1>Olin Auth</h1>
+
+$if failed:
+	<p style="background: #fe0; border: 3px dashed black; padding: 0.5em;">Failed login. Try again.</p>
+
+$if username != None:
+	<form action="${get_root()}/logout" method="post">
+	<p>Logged in as $username. <input type="submit" value="Logout?"></p>
+	</form>
+$else:
+	<form method="post" action="?$query">
+	<p>Username: MILKYWAY\<input name="username" ></p>
+	<p>Password: <input name="password" type="password"></p>
+	<p><input type="submit" value="Submit"></p>
+	</form>
